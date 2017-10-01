@@ -69,12 +69,12 @@ public class SimpleSerial : MonoBehaviour {
                 if (int.Parse(strEul[2]) != 0)  // Condition based on arduino INPUT_PULLUP (0 for on, 1 for off)
                 {
                     // do stuff when button IS NOT pushed (off)
-                    this.GetComponent<MeshRenderer>().enabled = true; // turns off meshrenderer, in effect, hiding this
+                    this.GetComponent<MeshRenderer>().enabled = true; 
                 }
                 else
                 {
                     // do stuff when button IS pushed (on)
-                    this.GetComponent<MeshRenderer>().enabled = false; 
+                    this.GetComponent<MeshRenderer>().enabled = false; // turns off meshrenderer, in effect, hiding this
                 }
             }
         }
